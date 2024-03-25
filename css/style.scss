@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$primary_1: #ffffff;
+$primary_2: #010101;
+$primary_3: #E1EBF4;
+$primary_4: #ea552b;
+$myFont: "Poppins", Helvetica,  Arial, sans-serif;
+$myHeight: 100vh;
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: $myFont;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.sectionOne {
+  height: $myHeight;
+  background-color: $primary_3;
+
+  .preloader {
+    color: $primary_3;
+  }
+
+  .navigation {
+    color: $primary_1;  
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 80%;
+    background-color: $primary_1;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-radius: 10px;
+    z-index: 100;
+    height: 5%;
+    position: absolute;
+    margin-left: 10%;
+  }
+
+  .logo {
+    color: $primary_2;
+  }
+
+  .navLinks li {
+    display: inline;
+    list-style-type: none;
+    margin: 0 20px 0 20px;
+  }
+
+  .navLinks a {
+    color: $primary_2;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .navBtn {
+    background-color: $primary_2;
+    color: $primary_1;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .banner img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 88%;
+    height: 100%;
+    margin-bottom: 100px;
+  }
+
+  
+
+  .bannerTextTop {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto !important;
+    position: absolute;
+    left: 10%;
+    top: 160px;
+  }
+
+  .bannerTextTop p {
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 350px;
+  }
+
+  .bannerTextTopRight {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    height: auto !important;
+    position: absolute;
+    right: 10%;
+    top: 160px;
+    gap: 20px;
+  }
+
+  .bannerTextTopRight i {
+    font-size: 88px;
+  }
+
+  .bannerTextTopRight span {
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 350px;
+  }
+
+  .bannerTextCenter {
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
+  .bannerTextCenter h1,
+  .bannerTextCenter h1 span {
+    font-size: 120px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $myFont;
+  }
+
+  .bannerTextCenter h1 span {
+    -webkit-text-stroke: 2px black;
+    -webkit-text-fill-color: #ffffff00;
+  }
+
+  .bannerTextBottom {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto !important;
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    transform: translate(-50%, 0%);
+    z-index: 2;
+  }
+  
+  .bannerTextbottom .text .scroll {
+    width: 40px;
+    height: 80px;
+    margin-right: 20px;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: unset;
+  }
+  
+  .bannerTextBottom .text .scroll i {
+    animation: scrolling 1s linear infinite;
+  }
+  
+  @keyframes scrolling {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(20px);
+    }
+  }
+  .bannerTextBottom .text span {
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    width: 80px;
+  }
+  
+  .bannerTextBottom .text {
+    height: auto !important;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 350px;
+  }
+  
+  .bannerTextBottom .text p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .bannerTextBottom .text ul {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .bannerTextBottom .text ul li a {
+    font-size: 16px;
+    font-weight: 600;
+    color: $primary_2;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    text-decoration: none;
+  }
+  
+  .bannerTextBottom .text ul li a:hover {
+    color: $primary_4;
+  }
+  
+
+}
+
+.common_btn {
+  background: $primary_2;
+  padding: 22px 48px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  box-shadow: 5px 5px 0px 0px #01010120;
+}
+
+.common_btn span {
+  font-size: 18px;
+  font-weight: 700;
+  color: $primary_1;
+  text-transform: capitalize;
+}
+
+.about {
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+
+  
+  .about_text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  
+  .about_text .description {
+    font-weight: 600;
+    font-size: 36px;
+    position: relative;
+    padding-top: 75px;
+    margin-bottom: 25px;
+  }
+  
+  .about_text .description::after {
+    position: absolute;
+    content: "";
+    background: url(/images/about_shapes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+  }
+  
+  .about_text ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  
+  .about_text ul li {
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+    
+  .about_text ul li h2,
+  .about_text ul li h2 span {
+    font-weight: 900;
+    font-size: 55px;
+  }
+  
+  .about_text ul li p {
+    font-size: 18px;
+    font-weight: 700;
+    max-width: 100px;
+    margin-left: 10px;
+  }
+  
+  .sectionHeading {
+    background: $primary_2;
+    padding: 52px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    
+  .sectionHeading h2,
+  .sectionHeading h2 span {
+    color: $primary_1;
+    font-family: $myFont;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 55px;
+    text-align: center;
+  }
+    
+  .sectionHeading h2 span {
+    -webkit-text-stroke: 1px #ffffff;
+    -webkit-text-fill-color: #ffffff00;
+    margin: 0 25px;
+  }
+
+  .pt_120 {
+    padding-top: 120px !important;
+  }
+
+  .pb_120 {
+    padding-bottom: 120px !important;
+  }
+}
